@@ -1,0 +1,168 @@
+
+// for(int i=0;i<str.length();i++){
+
+//             char ch=str.charAt(i);
+//             int current=(int)ch;
+//             boolean flag=true;
+//             if(current>=97){
+//                 //small
+//                 current-=32;
+//                 char dh=(char)current;
+//                 str.setCharAt(i, dh);
+//             }else{
+//                 current+=32;
+//                 char dh=(char)current;
+//                 str.setCharAt(i, dh);
+//             }
+//         }
+
+
+
+// for(int i=0;i<str.length();i++){
+
+//     char ch=str.charAt(i);
+//     int current=(int)ch;
+//     if(current==' '){
+//  continue;
+//     }
+//     else if(current>=48 && current<=57){
+// char dh=(char)current;
+// str.setCharAt(i, dh);
+//     }
+//     else if(current>=97){
+// //small
+// current-=32;
+// char dh=(char)current;
+// str.setCharAt(i, dh);
+//     }else{
+// current+=32;
+// char dh=(char)current;
+// str.setCharAt(i, dh);
+//     }
+// }
+    //  by using string---------------------------------------------------------------------------------------
+// for(int i=0;i<str.length();i++){
+
+//         char ch=str.charAt(i);
+//         int current=(int)ch;
+//         if(current==' '){
+//             continue;
+//             }
+//         else if(current>=48 && current<=57){
+//             char dh=(char)current;
+//             str=str.substring(0, i)+dh+str.substring(i+1);
+
+//             }
+//         else if(current>=97){
+//         //small
+//             current-=32;
+//             char dh=(char)current;
+//            str=str.substring(0, i)+dh+str.substring(i+1);
+
+//         }else{
+//             current+=32;
+//             char dh=(char)current;
+//             str=str.substring(0, i)+dh+str.substring(i+1);
+//         }
+//     }
+
+
+// String str="abswba";
+//         StringBuilder gtr=new StringBuilder(str);
+//         gtr.reverse();
+//         String s=gtr+"";
+//         if(str.equals(s)){
+//             System.out.println("pallindrome");
+//         }else{
+//             System.out.println("not");
+//         }
+
+// while (i<j) {
+//         if(str.charAt(i)==str.charAt(j)){
+//             flag=true;
+            
+//         }else{
+//             flag=false;
+//         }
+//         i++;
+//         j--;
+//     }
+//     if(flag==true){
+//         System.out.println("Pallindrome");
+//     }else{
+//         System.out.println("not pallindrome");
+//     }
+
+
+// static boolean isPallindrome(String str){
+//         int i=0;
+//         int j=str.length()-1;
+//         while (i<j) {
+//             if(str.charAt(i)!=str.charAt(j)){
+//                 return false;
+                
+//             }
+//             i++;
+//             j--;
+//         }
+//         return true;
+//     }
+
+// for(int i=0;i<str.length();i++){
+//         for(int j=i+1;j<str.length();j++){
+//             if(isPallindrome(str.substring(i,j))==true){
+//                 System.out.print(str.substring(i,j)+"  ");
+//                 count++;
+//             }
+//         }
+//     }
+//     System.out.println(count);
+
+
+
+//  String str="I am an educator";
+//     String ans="";
+//     StringBuilder sb=new StringBuilder();
+    
+//     for(int i=0;i<str.length();i++){
+//         char ch=str.charAt(i);
+//         if(str.charAt(i)==' '){
+//             sb.reverse();
+//             ans+=sb;
+//             ans+=" ";
+//             // sb.delete(0,sb.length()-1);
+//             sb=new StringBuilder("");
+            
+//         }else{
+//             sb.append(ch);
+//         }
+//     }
+//     sb.reverse();
+//     ans+=sb;
+//     System.out.println(ans);
+    
+
+
+// String str="aaaabbbbbbccccccde";
+//         String ans=""+str.charAt(0);
+//         int count=1;
+//         for(int i=1;i<str.length();i++){
+//             char current=str.charAt(i);
+//             char prev=str.charAt(i-1);
+
+//             if(current==prev){
+//                 count++;
+//             }else{
+//                 if(count>1){
+//                     ans+=count;
+//                 }
+//                 count=1;
+//                 ans+=current;
+                
+//             }
+//         }
+//         if(count>1){
+//             ans+=count;
+//         }
+        
+//         System.out.println(ans);

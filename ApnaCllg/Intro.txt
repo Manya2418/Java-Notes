@@ -1,0 +1,10 @@
+// char-2 bytes
+// boolean 1 byte
+// int - 4,long- 8 ,float-4,double-8;
+
+
+Time complexity
+Relation betweem input size and running time (operation)
+Bests case
+average case
+worst case
